@@ -9,6 +9,6 @@ Usei meus pets de atores para os papéis de vilão e heroína.
 
 ## 😾 Link do jogo 😺
 
-Você podejogar o game através do [link](https://jupivsvenus.netlify.app/)
+Você pode jogar através do [link](https://jupivsvenus.netlify.app/).
 
 
