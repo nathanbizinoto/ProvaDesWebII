@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="fundo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Herói e vilão</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="personagem-container">
+            <div id="heroi" class="personagem">
+                <div class="barra-vida" :class="vidaCor(heroi.vida)"
+                    :style="{ width: (heroi.vida < 0 ? 0 : (heroi.vida > 100 ? 100 : heroi.vida)) + '%' }">
+                    {{ heroi.vida }} </div>
+
+                <div class="sprite"><img id="img" src="/img/heroina.jpeg" alt="" srcset=""></div>
+                <h1 class="h-heroi">Venus</h1>
+                <div class="acoes">
+                    <button @click="atacar(true)">Atacar </button>
+                    <button @click="defender(true)">Defender</button>
+                    <button @click="usarPocao(true)">Usar poção </button>
+                    <button id="correr" @click="correr(true)">Correr </button>
+                </div>
+            </div>
+
+            <div id="vilao" class="personagem">
+                <div class="barra-vida" :class="vidaCor(vilao.vida)"
+                    :style="{ width: (vilao.vida < 0 ? 0 : (vilao.vida > 100 ? 100 : vilao.vida)) + '%' }">
+                    {{ vilao.vida }} </div>
+                <div class="sprite"><img id="img" src="/img/vilao.jpeg" alt="" srcset=""></div>
+                <h1 class="h-vilao">Júpiter</h1>
+                <div class="mensagem">{{ mensagemAcao }}</div>
+            </div>
+        </div>
+        <div class="historicoContainer">
+            <div id="historico">
+                <h3>Histórico de Ações</h3>
+                <ul id="historico-list" class="historico-list">
+                    <li v-for="(acao, index) in historico" :key="index">
+                        {{ acao }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
