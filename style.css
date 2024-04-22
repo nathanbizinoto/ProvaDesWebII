@@ -4,6 +4,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(img/fundo.jpg);
 }
 
 #fundo {
@@ -46,7 +47,6 @@ body, html {
 
 }
 
-
 .personagem:hover {
     transform: translateY(-5px);
 }
@@ -68,14 +68,14 @@ button {
     padding: 8px;
     border: none;
     border-radius: 5px;
-    background-color: mediumpurple;
+    background-color: rgb(28, 126, 66);
     color: antiquewhite;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover{
-    background-color: lightpink;
+    background-color: rgb(19, 97, 84);
     transform: translate(-3px);
 }
 
@@ -96,14 +96,16 @@ button:active{
 }
 
 #historico{
+    margin-left: 10px;
+    padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    background-color: #a5dde1;
+    background-color: #646464;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: rgb(41, 41, 165);
+    color: rgb(255, 255, 255);
     overflow-y: auto;
     max-height: 550px; 
     width: 300px;
@@ -146,10 +148,11 @@ button:active{
     color: rgb(255, 255, 255);
 }
 .mensagem{
-    color: rgb(250, 87, 87);
+    font-weight: bold;
+    color: rgb(221, 128, 128);
     text-align:center;
-    font-family: 'Bloody', cursive;
-    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 
 .historico-list {
