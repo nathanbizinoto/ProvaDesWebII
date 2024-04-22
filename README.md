@@ -1,5 +1,5 @@
 
-# Jogo Herói & Vilão 
+# Jogo Herói & Vilão 😾 😺
 
 Jogo criado para Disciplina de Dev Web II do curso de Desenvolvimento de Software Multiplataforma da Fatec Franca.
 Usei meus pets de atores para os papéis de vilão e heroína.
