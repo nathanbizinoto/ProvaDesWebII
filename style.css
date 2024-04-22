@@ -1,38 +1,40 @@
-body, html{
+body, html {
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#fundo{
-    background-image: url("img/fundo.jpg");
-    background-size: cover; /* faz a imagem cobrir todo o fundo */
-    background-position: center; /* centraliza a imagem */
-    background-repeat: no-repeat; /* evita a repetição da imagem */
-    
-}
-#app {
-    width: 80%;
-    margin: 0 auto; /* Centraliza o contêiner na página */
-    display: flex;
-    gap: 20px; 
-    justify-content: space-between;
-    align-items: center;
-    flex-direction:row;
-}
 
-.historicoContainer {
-    display: flex; /* Usa flexbox para centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    max-height: 415px; /* Defina a altura máxima desejada para o contêiner */
+#fundo {
+    background-image: url("img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .personagem-container {
-    display: flex; /* Alterado para flex para colocar os personagens lado a lado */
-    justify-content: space-between; /* Distribui os personagens igualmente nas colunas */
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.historicoContainer {
+    display: flex;
+    justify-content: center;
+    max-height: 415px;
+}
+
 
 .personagem{
     border-radius: 5px;
@@ -56,7 +58,7 @@ body, html{
     background-color: rgba(82, 99, 83, 0.97);
 
 }
-.acoes{
+.actions{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:8px;
@@ -92,17 +94,34 @@ button:active{
     margin-bottom: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+#historico{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #a5dde1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(41, 41, 165);
+    overflow-y: auto;
+    max-height: 550px; 
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
 .barra-vida.alta {
     background: linear-gradient(to right, #00b09b, #96c93d);
 }
 
 .barra-vida.media {
     color: #717171;
-    background: linear-gradient(to right, #e3f52c,#fafe9b);
+    background: linear-gradient(to right, #95a10b,#fafe9b);
 }
 
 .barra-vida.baixa {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #ff7e5f, #e6975b);
 }
 
 
@@ -119,42 +138,27 @@ button:active{
         border-radius: 5px;
 }
 .h-heroi{
-    font-family: Lucida Handwriting, cursive;
-    color: rgb(235, 71, 188);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(253, 253, 253);
 }
 .h-vilao{
-    font-family: Papyrus, fantasy;
-    color: rgb(0,0,0);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
 }
 .mensagem{
-    color: rgb(224,2,2,1);
+    color: rgb(250, 87, 87);
     text-align:center;
     font-family: 'Bloody', cursive;
     font-size: 20px;
 }
-#historico{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    background-color: #a5dde1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: rgb(41, 41, 165);
-    overflow-y: auto; /* Adiciona barra de rolagem vertical quando necessário */
-    max-height: 550px; /* Defina a altura máxima desejada para o contêiner */
-    width: 300px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-}
 .historico-list {
-    margin: 0; /* Remove as margens padrão da lista */
-}
+    margin: 0;}
 
 .historico-list li {
-    margin-bottom: 5px; /* Adiciona um espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
 }
 
 .historico-list li:last-child {
-    margin-bottom: 20px; /* Adiciona uma margem inferior ao último item da lista */
+    margin-bottom: 20px; 
 }

@@ -96,7 +96,7 @@ createApp({
         },
         acaoVilao() {
             const acoes = ['atacar', 'defender', 'usarPocao', 'correr'];
-            const pesos = [5, 2, 2, 1]; // probabilidades ajustadas
+            const pesos = [5, 2, 2, 1]; 
             const acaoAleatoria = this.pesosAleatorios(acoes, pesos);
 
             this[acaoAleatoria](false);
